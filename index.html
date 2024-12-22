@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Hari Ibu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            height: 100vh;
+            margin: 0;
+            overflow-y: auto; /* Enable vertical scrolling */
+            text-align: center;
+            padding: 20px; /* Add padding to the body */
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%; /* Full width for smaller screens */
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+            margin: 0 auto; /* Center the container */
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #d5006d;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .images img {
+            width: calc(33% - 10px);
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .images img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .images img {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .images img {
+                width: 100%;
+            }
+        }
+
+        /* Additional styles for buttons */
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #d5006d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #a4004f;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="Style - Taylor Swift (edit audio - use HEADPHONE ).mp3" type="audio/mpeg">
+      
+    </audio>
+    <div class="container">
+        <h1>Selamat Hari Ibu! Bundaaa</h1>
+        <p>untuk bunda, terima kasih banyak sudah berjuang untuk kami, daud dan alif, terima kasih udah selalu ada sebagai ortu yang selalu ada untuk anak nya, terima kasih banyak selalu menjadi ortu yang selalu bisa di andalkan, meski bunda jarang secara langsung memperhatikan kami, ngga ngebuat rasa kasih sayang kami ke bunda hilang, tetep semangat dan sehat selalu yaa bundaa, doa kan anak anak bunda selalu sukses dan pasti akan membahagiakan dan buat bunda bangga, aamiin ya rabbal alamin.</p>
+        <button class="button" onclick="playAudio()">Putar Musik</button>
+        <div class="images">
+            <img src="WhatsApp Image 2024-12-22 at 17.26.52_a8bf1e94.jpg" alt="Ibu 1">
+            <img src="WhatsApp Image 2024-12-22 at 17.26.53_7d9099ac.jpg" alt="Ibu 2">
+            <img src="WhatsApp Image 2024-12-22 at 17.26.53_09d0e96b.jpg" alt="Ibu 3">
+        </div>
+        
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('background-audio');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
